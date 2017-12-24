@@ -1,0 +1,2420 @@
+  VIBlend.WinForms.DataGridView.SuperGridCtrl.resources - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.icon_arrowright.ico - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.icon_arrowdown.ico - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.CROSSCURSOR.CUR - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.fieldsArea.png - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Filters.FilterForm.resources - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.vDataGridViewPivotDesign.ico - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.vDataGridView.ico - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.icon_sortDESC.ico - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.icon_filterClear.ico - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.rowArea.png - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.vDataGridViewSearchHeader.ico - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.icon_sortASC.ico - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.colormap.bmp - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.vDataGridView.resources - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.icon_remove.png - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.icon_filter.ico - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.ColumnChooser.resources - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.vDataGridViewGroupsHeader.ico - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.columnArea.png - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.vDataGridViewPivotDesign.resources - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.icon_arrowup.ico - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.icon_sortClear.ico - Embedded, ContainedInManifestFile, 
+  VIBlend.WinForms.DataGridView.Resources.icon_arrowleft.ico - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v2.0.50727
+Assembly VIBlend.WinForms.DataGridView, Version=10.1.0.0, Culture=neutral, PublicKeyToken=84a1a092e92851e6: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly VIBlend.WinForms.Controls, Version=10.1.0.0, Culture=neutral, PublicKeyToken=6feea38fef5ea0cf: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly VIBlend.WinForms.Utilities, Version=10.1.0.0, Culture=neutral, PublicKeyToken=970a5af59bc48043: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class VIBlend.WinForms.DataGridView.HierarchyItemPaintEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.HierarchyItem, System.Drawing.Rectangle, System.Drawing.Graphics): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Handled 'get set' : 
+    System.Drawing.Rectangle Bounds 'get ' : 
+    System.Drawing.Graphics Graphics 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem HierarchyItem 'get set' : 
+  Methods:
+    get_Handled(): PrivateScope, Public, HideBySig, SpecialName
+    set_Handled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Bounds(): PrivateScope, Public, HideBySig, SpecialName
+    get_Graphics(): PrivateScope, Public, HideBySig, SpecialName
+    get_HierarchyItem(): PrivateScope, Public, HideBySig, SpecialName
+    set_HierarchyItem(HierarchyItem): PrivateScope, Public, HideBySig, SpecialName
+Interface VIBlend.WinForms.DataGridView.IEditor: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+  Methods:
+    get_EditorType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Control(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnCloseEditor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_EditorValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class VIBlend.WinForms.DataGridView.ComboBoxEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.Controls.vComboBox
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    Boolean EnableCloseOnSelectionChanged 'get set' : 
+    Boolean AutoOpenEditorOnActivation 'get set' : 
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.GridCell EditCell 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+  Events:
+    System.EventHandler Loaded: 
+  Methods:
+    get_EnableCloseOnSelectionChanged(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnableCloseOnSelectionChanged(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoOpenEditorOnActivation(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoOpenEditorOnActivation(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditCell(): PrivateScope, Public, HideBySig, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_Loaded(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Loaded(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnCloseEditor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface VIBlend.WinForms.DataGridView.DataExport.IExportWriter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    CreateFile(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CloseFile(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    BeginRow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EndRow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddColumn(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddColumn(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class VIBlend.WinForms.DataGridView.DataExport.GridExport: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ExportToCSV(vDataGridView, String): PrivateScope, Public, HideBySig
+    ExportToHTML(vDataGridView, String): PrivateScope, Public, HideBySig
+    ExportToExcelXML(vDataGridView, String): PrivateScope, Public, HideBySig
+    ExportToXML(vDataGridView, String): PrivateScope, Public, HideBySig
+    Export(vDataGridView, String, IExportWriter): PrivateScope, Public, HideBySig
+Class VIBlend.WinForms.DataGridView.DataGridLocalizationBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Methods:
+    GetString(LocalizationNames): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class VIBlend.WinForms.DataGridView.DataGridLocalization: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.DataGridView.DataGridLocalizationBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetString(LocalizationNames): PrivateScope, Public, Virtual, HideBySig
+Struct VIBlend.WinForms.DataGridView.LocalizationNames: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.LocalizationNames ContextMenuSortSmallestToLargest = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames ContextMenuSortLargestToSmallest = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames ContextMenuColumnChooser = 2 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames ContextMenuGroupByThisColumn = 3 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames ContextMenuRemoveSort = 4 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames ContextMenuFilter = 5 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames ContextMenuClearFilter = 6 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterWindowOrRadioButton = 7 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterWindowAndRadioButton = 8 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterWindowOkButton = 9 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterWindowCancelButton = 10 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterWindowFilterBy = 11 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorSelect = 12 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorEqual = 13 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorEqualCaseSensitive = 14 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorNotEqual = 15 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorLessThan = 16 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorLessThanOrEqual = 17 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorGreaterThan = 18 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorGreaterThanOrEqual = 19 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorIsNull = 20 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorIsNotNull = 21 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorIsEmpty = 22 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorIsNotEmpty = 23 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorContains = 24 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorContainsCaseSensitive = 25 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorDoesNotContain = 26 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorDoesNotContainCaseSensitive = 27 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorStartsWith = 28 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorStartsWithCaseSensitive = 29 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorEndsWith = 30 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorEndsWithCaseSensitive = 31 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterOperatorRegularExpression = 32 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterValueText = 33 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterShowRowsWhereText = 34 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterCriteriaDefinition = 35 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterButtonCustomFilter = 36 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterButtonBasicFilter = 37 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterItemsAllText = 38 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterItemsBlanksText = 39 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames FilterItemsNullsText = 40 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames PivotTableSubTotalText = 41 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.LocalizationNames PivotTableGrandTotalText = 42 : Public, Static, Literal, HasDefault
+Interface VIBlend.WinForms.DataGridView.ICell: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    VIBlend.WinForms.DataGridView.GridCell Cell 'get ' : 
+  Methods:
+    get_Cell(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class VIBlend.WinForms.DataGridView.CellEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.GridCell): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.ICell
+  Properties:
+    VIBlend.WinForms.DataGridView.GridCell Cell 'get ' : 
+  Methods:
+    get_Cell(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class VIBlend.WinForms.DataGridView.CellCancelEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.DataGridView.CellEventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.GridCell): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Cancel 'get set' : 
+  Methods:
+    get_Cancel(): PrivateScope, Public, HideBySig, SpecialName
+    set_Cancel(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.EditorActivationCancelEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.DataGridView.CellCancelEventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.GridCell, VIBlend.WinForms.DataGridView.EditorActivationFlags, System.Windows.Forms.KeyEventArgs): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get ' : 
+    System.Windows.Forms.KeyEventArgs KeyEventArgs 'get ' : 
+  Methods:
+    get_ActivationFlags(): PrivateScope, Public, HideBySig, SpecialName
+    get_KeyEventArgs(): PrivateScope, Public, HideBySig, SpecialName
+Struct VIBlend.WinForms.DataGridView.EditorActivationFlags: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.EditorActivationFlags MOUSE_MOVE = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.EditorActivationFlags MOUSE_CLICK = 2 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.EditorActivationFlags MOUSE_DBLCLICK = 4 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.EditorActivationFlags KEY_PRESS = 8 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.EditorActivationFlags PROGRAMMATIC = 16 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.EditorActivationFlags MOUSE_CLICK_SELECTED_CELL = 32 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.EditorActivationFlags KEY_PRESS_ENTER = 64 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.EditorActivationFlags KEY_PRESS_ESC = 128 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.vDataGridView: AutoLayout, AnsiClass, Class, Public
+  :System.Windows.Forms.Control
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.Utilities.IScrollableControlBase
+    System.ComponentModel.INotifyPropertyChanged
+  Fields:
+    System.Collections.Generic.IComparer`1[VIBlend.WinForms.DataGridView.GridCell] GridCellSortComparer : Public
+    VIBlend.WinForms.DataGridView.BoundItemsCollection`1[VIBlend.WinForms.DataGridView.BoundFieldFilter] BoundFieldsFilters : Public
+    VIBlend.WinForms.DataGridView.BoundItemsCollection`1[VIBlend.WinForms.DataGridView.BoundField] BoundFields : Public
+    VIBlend.WinForms.DataGridView.BoundItemsCollection`1[VIBlend.WinForms.DataGridView.BoundField] BoundPivotRows : Public
+    VIBlend.WinForms.DataGridView.BoundItemsCollection`1[VIBlend.WinForms.DataGridView.BoundField] BoundPivotColumns : Public
+    VIBlend.WinForms.DataGridView.BoundItemsCollection`1[VIBlend.WinForms.DataGridView.BoundValueField] BoundPivotValues : Public
+    VIBlend.WinForms.DataGridView.BoundItemsCollection`1[VIBlend.WinForms.DataGridView.BoundField] GroupingColumns : Public
+    Boolean PivotValuesOnRows : Public
+  Properties:
+    VIBlend.WinForms.DataGridView.FilterDisplayMode FilterDisplayMode 'get set' : 
+    VIBlend.WinForms.DataGridView.ColumnChooser ColumnChooser 'get ' : 
+    Boolean EnableColumnChooser 'get set' : 
+    System.Windows.Forms.ToolTip ResizeToolTip 'get ' : 
+    Boolean EnableResizeToolTip 'get set' : 
+    Boolean AutoGenerateColumns 'get set' : 
+    VIBlend.Utilities.GridTheme Theme 'get set' : 
+    VIBlend.Utilities.VIBLEND_THEME VIBlendTheme 'get set' : 
+    Boolean VirtualModeCellDefault 'get set' : 
+    Boolean AllowHeaderItemHighlightOnCellSelection 'get set' : 
+    Boolean AllowDragDropIndication 'get set' : 
+    Boolean SelectionBorderEnabled 'get set' : 
+    Int32 SelectionBorderWidth 'get set' : 
+    System.Drawing.Drawing2D.DashStyle SelectionBorderDashStyle 'get set' : 
+    VIBlend.WinForms.DataGridView.GridLinesDisplayMode GridLinesDisplayMode 'get set' : 
+    System.Drawing.Drawing2D.DashStyle GridLinesDashStyle 'get set' : 
+    Boolean AllowCellMerge 'get set' : 
+    Boolean AllowClipDrawing 'get set' : 
+    Boolean EnableToolTips 'get set' : 
+    Int32 ToolTipShowDelay 'get set' : 
+    Int32 ToolTipDuration 'get set' : 
+    System.Windows.Forms.ImageList ImageList 'get set' : 
+    VIBlend.WinForms.DataGridView.CellsArea CellsArea 'get ' : 
+    SELECTION_MODE SelectionMode 'get set' : 
+    Boolean MultipleSelectionEnabled 'get set' : 
+    VIBlend.WinForms.DataGridView.DataGridLocalizationBase Localization 'get set' : 
+    VIBlend.WinForms.DataGridView.RowsHierarchy RowsHierarchy 'get ' : 
+    VIBlend.WinForms.DataGridView.ColumnsHierarchy ColumnsHierarchy 'get ' : 
+    System.Drawing.Color BorderColor 'get set' : 
+    Boolean ShowBorder 'get set' : 
+    Int32 VerticalScrollBarLargeChange 'get set' : 
+    Int32 VerticalScrollBarSmallChange 'get set' : 
+    Int32 HorizontalScrollBarLargeChange 'get set' : 
+    Int32 HorizontalScrollBarSmallChange 'get set' : 
+    Int32 HorizontalScroll 'get set' : 
+    Int32 VerticalScroll 'get set' : 
+    Boolean ScrollBarsEnabled 'get set' : 
+    Boolean AllowCopyPaste 'get set' : 
+    Boolean AllowAnimations 'get set' : 
+    VIBlend.Utilities.AnimationManager AnimationManager 'get ' : 
+    Boolean AllowContextMenuSorting 'get set' : 
+    Boolean AllowDefaultContextMenu 'get set' : 
+    Boolean AllowContextMenuFiltering 'get set' : 
+    Boolean AllowContextMenuGrouping 'get set' : 
+    Boolean AllowContextMenuColumnChooser 'get set' : 
+    System.Windows.Forms.ContextMenuStrip ContextMenuStrip 'get set' : 
+    Boolean BindingProgressEnabled 'get set' : 
+    Int32 BindingProgressSampleRate 'get set' : 
+    Boolean GroupingDefaultHeaderTextVisible 'get set' : 
+    VIBlend.WinForms.DataGridView.GridBindingState BindingState 'get ' : 
+    System.Object DataSource 'get set' : 
+    System.String DataMember 'get set' : 
+    Boolean PivotRowsTotalsEnabled 'get set' : 
+    VIBlend.WinForms.DataGridView.PivotTotalsMode PivotRowsTotalsMode 'get set' : 
+    Boolean PivotColumnsTotalsEnabled 'get set' : 
+    VIBlend.WinForms.DataGridView.PivotTotalsMode PivotColumnsTotalsMode 'get set' : 
+    Boolean GroupingEnabled 'get set' : 
+    Boolean AutoUpdateOnListChanged 'get set' : 
+  Events:
+    System.ComponentModel.CancelEventHandler ContextMenuShowing: 
+    System.EventHandler ContextMenuClosed: 
+    GridTooltipEventHandler TooltipShow: 
+    GridBindField BindField: 
+    DataBindingCompleteEventHandler BindingComplete: 
+    DataBindingStartEventHandler BindingStart: 
+    System.EventHandler VerticalScrollBarValueChanged: 
+    System.EventHandler HorizontalScrollBarValueChanged: 
+    System.EventHandler AutoScrollPositionChanged: 
+    BindingProgressFormatEventHandler BindingProgressChanged: 
+    System.ComponentModel.PropertyChangedEventHandler PropertyChanged: 
+    HierarchyItemEventHandler HierarchyItemExpanded: 
+    HierarchyItemMouseEventHandler HierarchyItemMouseClick: 
+    HierarchyItemMouseEventHandler HierarchyItemMouseDown: 
+    HierarchyItemMouseEventHandler HierarchyItemMouseUp: 
+    HierarchyItemMouseEventHandler HierarchyItemMouseDoubleClick: 
+    HierarchyItemPaintEventHandler HierarchyItemCustomPaint: 
+    HierarchyItemEventHandler HierarchyItemCollapsed: 
+    HierarchyItemCancelEventHandler HierarchyItemExpanding: 
+    HierarchyItemCancelEventHandler HierarchyItemCollapsing: 
+    HierarchyItemDragEventHandler HierarchyItemDragStarted: 
+    HierarchyItemDragEventHandler HierarchyItemDragEnded: 
+    HierarchyItemDragCancelEventHandler HierarchyItemDragStarting: 
+    HierarchyItemDragCancelEventHandler HierarchyItemDragEnding: 
+    HierarchyItemDragEventHandler HierarchyItemDrag: 
+    HierarchyItemEventHandler HierarchyItemSelectionChanged: 
+    System.EventHandler`1[System.ComponentModel.ListChangedEventArgs] ListChanged: 
+    System.EventHandler`1[VIBlend.WinForms.DataGridView.vDataGridView+CellKeyEventArgs] CellKeyDown: 
+    System.EventHandler`1[VIBlend.WinForms.DataGridView.vDataGridView+CellKeyEventArgs] CellKeyUp: 
+    CellEditorActivateEventHandler CellEditorActivate: 
+    CellEditorActivateEventHandler CellEditorDeActivate: 
+    CellCancelEventHandler CellValidating: 
+    CellEventHandler CellValidated: 
+    CellCancelEventHandler CellEndEdit: 
+    CellCancelEventHandler CellBeginEdit: 
+    CellMouseEventHandler CellMouseDown: 
+    CellMouseEventHandler CellMouseUp: 
+    CellMouseEventHandler CellMouseClick: 
+    CellMouseEventHandler CellMouseDoubleClick: 
+    CellMouseEventHandler CellMouseMove: 
+    CellEventHandler CellMouseEnter: 
+    CellEventHandler CellMouseLeave: 
+    CellParsingEventHandler CellParsing: 
+    CellPaintEventHandler CellCustomPaint: 
+    GridGroupHeaderCustomTextNeededEventHandler GroupHeaderCustomTextNeeded: 
+    CellValueNeededEventHandler CellValueNeeded: 
+    CellValueChangingEventHandler CellValueChanging: 
+    CellEventHandler CellValueChanged: 
+    CellEventHandler CellSelectionChanged: 
+    CellCancelEventHandler CellPaintBegin: 
+  Methods:
+    DrillThroughPivotCell(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    LoadColumnsLayout(Stream): PrivateScope, Public, HideBySig
+    SaveColumnsLayout(Stream): PrivateScope, Public, HideBySig
+    add_CellKeyDown(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellKeyDown(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_CellKeyUp(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellKeyUp(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_CellEditorActivate(CellEditorActivateEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellEditorActivate(CellEditorActivateEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellEditorDeActivate(CellEditorActivateEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellEditorDeActivate(CellEditorActivateEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellValidating(CellCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellValidating(CellCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellValidated(CellEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellValidated(CellEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellEndEdit(CellCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellEndEdit(CellCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellBeginEdit(CellCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellBeginEdit(CellCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellMouseDown(CellMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellMouseDown(CellMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellMouseUp(CellMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellMouseUp(CellMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellMouseClick(CellMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellMouseClick(CellMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellMouseDoubleClick(CellMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellMouseDoubleClick(CellMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellMouseMove(CellMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellMouseMove(CellMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellMouseEnter(CellEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellMouseEnter(CellEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellMouseLeave(CellEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellMouseLeave(CellEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellParsing(CellParsingEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellParsing(CellParsingEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellCustomPaint(CellPaintEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellCustomPaint(CellPaintEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_GroupHeaderCustomTextNeeded(GridGroupHeaderCustomTextNeededEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_GroupHeaderCustomTextNeeded(GridGroupHeaderCustomTextNeededEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellValueNeeded(CellValueNeededEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellValueNeeded(CellValueNeededEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellValueChanging(CellValueChangingEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellValueChanging(CellValueChangingEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellValueChanged(CellEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellValueChanged(CellEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellSelectionChanged(CellEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellSelectionChanged(CellEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CellPaintBegin(CellCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellPaintBegin(CellCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemExpanded(HierarchyItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemExpanded(HierarchyItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemMouseClick(HierarchyItemMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemMouseClick(HierarchyItemMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemMouseDown(HierarchyItemMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemMouseDown(HierarchyItemMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemMouseUp(HierarchyItemMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemMouseUp(HierarchyItemMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemMouseDoubleClick(HierarchyItemMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemMouseDoubleClick(HierarchyItemMouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemCustomPaint(HierarchyItemPaintEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemCustomPaint(HierarchyItemPaintEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemCollapsed(HierarchyItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemCollapsed(HierarchyItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemExpanding(HierarchyItemCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemExpanding(HierarchyItemCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemCollapsing(HierarchyItemCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemCollapsing(HierarchyItemCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemDragStarted(HierarchyItemDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemDragStarted(HierarchyItemDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemDragEnded(HierarchyItemDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemDragEnded(HierarchyItemDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemDragStarting(HierarchyItemDragCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemDragStarting(HierarchyItemDragCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemDragEnding(HierarchyItemDragCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemDragEnding(HierarchyItemDragCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemDrag(HierarchyItemDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemDrag(HierarchyItemDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HierarchyItemSelectionChanged(HierarchyItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HierarchyItemSelectionChanged(HierarchyItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_BindingState(): PrivateScope, Public, HideBySig, SpecialName
+    get_DataSource(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataSource(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_DataMember(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataMember(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PivotRowsTotalsEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_PivotRowsTotalsEnabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_PivotRowsTotalsMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_PivotRowsTotalsMode(PivotTotalsMode): PrivateScope, Public, HideBySig, SpecialName
+    get_PivotColumnsTotalsEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_PivotColumnsTotalsEnabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_PivotColumnsTotalsMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_PivotColumnsTotalsMode(PivotTotalsMode): PrivateScope, Public, HideBySig, SpecialName
+    get_GroupingEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_GroupingEnabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    DataBind(): PrivateScope, Public, HideBySig
+    add_ListChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ListChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoUpdateOnListChanged(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoUpdateOnListChanged(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    EnsureVisible(HierarchyItem): PrivateScope, Public, HideBySig
+    EnsureVisible(GridCell): PrivateScope, Public, HideBySig
+    get_AllowAnimations(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AllowAnimations(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AnimationManager(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ShowEditor(GridCell): PrivateScope, Public, HideBySig
+    ShowEditor(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    CloseEditor(Boolean): PrivateScope, Public, HideBySig
+    SortBy(HierarchyItem, SortingDirection): PrivateScope, Public, HideBySig (Obsolete)
+    RemoveSort(): PrivateScope, Public, HideBySig (Obsolete)
+    get_AllowContextMenuSorting(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowContextMenuSorting(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowDefaultContextMenu(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowDefaultContextMenu(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowContextMenuFiltering(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowContextMenuFiltering(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowContextMenuGrouping(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowContextMenuGrouping(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowContextMenuColumnChooser(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowContextMenuColumnChooser(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ContextMenuStrip(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ContextMenuStrip(ContextMenuStrip): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BindingProgressEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_BindingProgressEnabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_BindingProgressSampleRate(): PrivateScope, Public, HideBySig, SpecialName
+    set_BindingProgressSampleRate(Int32): PrivateScope, Public, HideBySig, SpecialName
+    add_BindingProgressChanged(BindingProgressFormatEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_BindingProgressChanged(BindingProgressFormatEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_GroupingDefaultHeaderTextVisible(): PrivateScope, Public, HideBySig, SpecialName
+    set_GroupingDefaultHeaderTextVisible(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    add_PropertyChanged(PropertyChangedEventHandler): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_PropertyChanged(PropertyChangedEventHandler): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    BeginUpdateTotals(): PrivateScope, Public, HideBySig
+    EndUpdateTotals(): PrivateScope, Public, HideBySig
+    remove_BindingStart(DataBindingStartEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_ImageList(): PrivateScope, Public, HideBySig, SpecialName
+    set_ImageList(ImageList): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsArea(): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectionMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectionMode(SELECTION_MODE): PrivateScope, Public, HideBySig, SpecialName
+    get_MultipleSelectionEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_MultipleSelectionEnabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Localization(): PrivateScope, Public, HideBySig, SpecialName
+    set_Localization(DataGridLocalizationBase): PrivateScope, Public, HideBySig, SpecialName
+    get_RowsHierarchy(): PrivateScope, Public, HideBySig, SpecialName
+    get_ColumnsHierarchy(): PrivateScope, Public, HideBySig, SpecialName
+    GetHeight(): PrivateScope, Public, HideBySig
+    GetWidth(): PrivateScope, Public, HideBySig
+    Render(): PrivateScope, Public, HideBySig
+    get_BorderColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_BorderColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowBorder(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowBorder(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_VerticalScrollBarLargeChange(): PrivateScope, Public, HideBySig, SpecialName
+    set_VerticalScrollBarLargeChange(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_VerticalScrollBarSmallChange(): PrivateScope, Public, HideBySig, SpecialName
+    set_VerticalScrollBarSmallChange(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_HorizontalScrollBarLargeChange(): PrivateScope, Public, HideBySig, SpecialName
+    set_HorizontalScrollBarLargeChange(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_HorizontalScrollBarSmallChange(): PrivateScope, Public, HideBySig, SpecialName
+    set_HorizontalScrollBarSmallChange(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_HorizontalScroll(): PrivateScope, Public, HideBySig, SpecialName
+    set_HorizontalScroll(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_VerticalScroll(): PrivateScope, Public, HideBySig, SpecialName
+    set_VerticalScroll(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScrollBarsEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScrollBarsEnabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    add_VerticalScrollBarValueChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_VerticalScrollBarValueChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HorizontalScrollBarValueChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HorizontalScrollBarValueChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowCopyPaste(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowCopyPaste(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    add_AutoScrollPositionChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_AutoScrollPositionChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    ShowFilterForm(HierarchyItem): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    add_ContextMenuShowing(CancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ContextMenuShowing(CancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ContextMenuClosed(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ContextMenuClosed(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    HideColumnChooser(): PrivateScope, Public, HideBySig
+    get_FilterDisplayMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_FilterDisplayMode(FilterDisplayMode): PrivateScope, Public, HideBySig, SpecialName
+    ShowColumnChooser(): PrivateScope, Public, HideBySig
+    ShowColumnChooser(Point): PrivateScope, Public, HideBySig
+    get_ColumnChooser(): PrivateScope, Public, HideBySig, SpecialName
+    get_EnableColumnChooser(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnableColumnChooser(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ResizeToolTip(): PrivateScope, Public, HideBySig, SpecialName
+    get_EnableResizeToolTip(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnableResizeToolTip(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoGenerateColumns(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoGenerateColumns(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Theme(): PrivateScope, Public, HideBySig, SpecialName
+    set_Theme(GridTheme): PrivateScope, Public, HideBySig, SpecialName
+    get_VIBlendTheme(): PrivateScope, Public, HideBySig, SpecialName
+    set_VIBlendTheme(VIBLEND_THEME): PrivateScope, Public, HideBySig, SpecialName
+    get_VirtualModeCellDefault(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_VirtualModeCellDefault(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AllowHeaderItemHighlightOnCellSelection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AllowHeaderItemHighlightOnCellSelection(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AllowDragDropIndication(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AllowDragDropIndication(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectionBorderEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectionBorderEnabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectionBorderWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectionBorderWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectionBorderDashStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectionBorderDashStyle(DashStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_GridLinesDisplayMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_GridLinesDisplayMode(GridLinesDisplayMode): PrivateScope, Public, HideBySig, SpecialName
+    get_GridLinesDashStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_GridLinesDashStyle(DashStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowCellMerge(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AllowCellMerge(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AllowClipDrawing(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AllowClipDrawing(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EnableToolTips(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EnableToolTips(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ToolTipShowDelay(): PrivateScope, Public, HideBySig, SpecialName
+    set_ToolTipShowDelay(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ToolTipDuration(): PrivateScope, Public, HideBySig, SpecialName
+    set_ToolTipDuration(Int32): PrivateScope, Public, HideBySig, SpecialName
+    add_TooltipShow(GridTooltipEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_TooltipShow(GridTooltipEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_BindField(GridBindField): PrivateScope, Public, HideBySig, SpecialName
+    remove_BindField(GridBindField): PrivateScope, Public, HideBySig, SpecialName
+    add_BindingComplete(DataBindingCompleteEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_BindingComplete(DataBindingCompleteEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_BindingStart(DataBindingStartEventHandler): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.vDataGridView+GridGroupHeaderCustomTextNeededEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, GroupHeaderCustomTextNeededEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, GroupHeaderCustomTextNeededEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+GridTooltipEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, GridToolTipEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, GridToolTipEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+GridBindField: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, BoundFieldEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, BoundFieldEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+DataBindingCompleteEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, EventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, EventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+DataBindingStartEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, EventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, EventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct VIBlend.WinForms.DataGridView.vDataGridView+SELECTION_MODE: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SELECTION_MODE FULL_ROW_SELECT = 0 : Public, Static, Literal, HasDefault
+    SELECTION_MODE FULL_COLUMN_SELECT = 1 : Public, Static, Literal, HasDefault
+    SELECTION_MODE CELL_SELECT = 2 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.vDataGridView+BindingProgressFormatEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, BindingProgressEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, BindingProgressEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+GroupHeaderCustomTextNeededEventArgs: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.HierarchyItem, VIBlend.WinForms.DataGridView.HierarchyItemsCollection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.HierarchyItem Row 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItemsCollection GroupRows 'get ' : 
+    System.String HeaderText 'get set' : 
+    System.Drawing.Font HeaderFont 'get set' : 
+    System.Drawing.Color HeaderTextColor 'get set' : 
+    System.Drawing.ContentAlignment HeaderTextAlignment 'get set' : 
+  Methods:
+    get_Row(): PrivateScope, Public, HideBySig, SpecialName
+    get_GroupRows(): PrivateScope, Public, HideBySig, SpecialName
+    get_HeaderText(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeaderText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_HeaderFont(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeaderFont(Font): PrivateScope, Public, HideBySig, SpecialName
+    get_HeaderTextColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeaderTextColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_HeaderTextAlignment(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeaderTextAlignment(ContentAlignment): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.vDataGridView+HierarchyItemMouseEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, HierarchyItemMouseEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, HierarchyItemMouseEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+HierarchyItemEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, HierarchyItemEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, HierarchyItemEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+HierarchyItemCancelEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, HierarchyItemCancelEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, HierarchyItemCancelEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+HierarchyItemPaintEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, HierarchyItemPaintEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, HierarchyItemPaintEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+HierarchyItemDragCancelEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, HierarchyItemDragCancelEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, HierarchyItemDragCancelEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+HierarchyItemDragEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, HierarchyItemDragEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, HierarchyItemDragEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+CellEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CellEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CellEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+CellCancelEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CellCancelEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CellCancelEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+CellValueChangingEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CellValueChangingEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CellValueChangingEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+CellMouseEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CellMouseEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CellMouseEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+CellParsingEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CellParsingEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CellParsingEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+CellPaintEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CellPaintEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CellPaintEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+CellValueNeededEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CellValueNeededEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CellValueNeededEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+CellEditorActivateEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, EditorActivationCancelEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, EditorActivationCancelEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridView+CellKeyEventArgs: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.GridCell, System.Windows.Forms.KeyEventArgs): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.GridCell Cell 'get ' : 
+    System.Windows.Forms.KeyEventArgs KeyEventArgs 'get set' : 
+  Methods:
+    get_Cell(): PrivateScope, Public, HideBySig, SpecialName
+    get_KeyEventArgs(): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.DateTimePickerEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.Controls.vDateTimePicker
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    Boolean EnableCloseOnSelectionChanged 'get set' : 
+    Boolean AutoOpenEditorOnActivation 'get set' : 
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+    VIBlend.WinForms.DataGridView.GridCell EditCell 'get ' : 
+  Methods:
+    get_EnableCloseOnSelectionChanged(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnableCloseOnSelectionChanged(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoOpenEditorOnActivation(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoOpenEditorOnActivation(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditCell(): PrivateScope, Public, HideBySig, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnCloseEditor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.ColorPickerEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.Controls.vColorPicker
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    Boolean EnableCloseOnSelectionChanged 'get set' : 
+    Boolean AutoOpenEditorOnActivation 'get set' : 
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.GridCell EditCell 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+  Events:
+    System.EventHandler Loaded: 
+  Methods:
+    get_EnableCloseOnSelectionChanged(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnableCloseOnSelectionChanged(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoOpenEditorOnActivation(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoOpenEditorOnActivation(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditCell(): PrivateScope, Public, HideBySig, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_Loaded(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Loaded(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnCloseEditor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.HierarchyItemEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.HierarchyItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.HierarchyItem HierarchyItem 'get ' : 
+  Methods:
+    get_HierarchyItem(): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.HierarchyItemDragEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(VIBlend.WinForms.DataGridView.HierarchyItem, VIBlend.WinForms.DataGridView.HierarchyItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.HierarchyItem DragSourceHierarchyItem 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem DropTargetHierarchyItem 'get ' : 
+  Methods:
+    get_DragSourceHierarchyItem(): PrivateScope, Public, HideBySig, SpecialName
+    get_DropTargetHierarchyItem(): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.HierarchyItemCancelEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.DataGridView.HierarchyItemEventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.HierarchyItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Cancel 'get set' : 
+  Methods:
+    get_Cancel(): PrivateScope, Public, HideBySig, SpecialName
+    set_Cancel(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.GridToolTipEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.HierarchyItem, VIBlend.WinForms.DataGridView.HierarchyItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.HierarchyItem RowItem 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem ColumnItem 'get ' : 
+    Boolean Handled 'get set' : 
+    System.String ToolTipText 'get set' : 
+  Methods:
+    get_RowItem(): PrivateScope, Public, HideBySig, SpecialName
+    get_ColumnItem(): PrivateScope, Public, HideBySig, SpecialName
+    get_Handled(): PrivateScope, Public, HideBySig, SpecialName
+    set_Handled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ToolTipText(): PrivateScope, Public, HideBySig, SpecialName
+    set_ToolTipText(String): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.CheckBoxEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    Boolean ThreeState 'get set' : 
+    VIBlend.WinForms.DataGridView.GridCell EditCell 'get ' : 
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    Boolean HandleGridSpaceKey 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+    System.Nullable`1[VIBlend.Utilities.VIBLEND_THEME] VIBlendTheme 'get set' : 
+  Events:
+    System.EventHandler CheckedChanged: 
+  Methods:
+    add_CheckedChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CheckedChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_ThreeState(): PrivateScope, Public, HideBySig, SpecialName
+    set_ThreeState(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_EditCell(): PrivateScope, Public, HideBySig, SpecialName
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HandleGridSpaceKey(): PrivateScope, Public, HideBySig, SpecialName
+    set_HandleGridSpaceKey(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_VIBlendTheme(): PrivateScope, Public, HideBySig, SpecialName
+    set_VIBlendTheme(Nullable`1): PrivateScope, Public, HideBySig, SpecialName
+    OnCloseEditor(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct VIBlend.WinForms.DataGridView.CollectionChangedReason: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.CollectionChangedReason Add = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CollectionChangedReason Remove = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CollectionChangedReason Reset = 2 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CollectionChangedReason ItemChange = 3 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.CollectionChangedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.CollectionChangedReason): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.CollectionChangedReason Reason 'get ' : 
+  Methods:
+    get_Reason(): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.CellPaintEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.GridCell, System.Drawing.Rectangle, System.Drawing.Graphics): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.ICell
+  Properties:
+    VIBlend.WinForms.DataGridView.GridCell Cell 'get ' : 
+    Boolean Handled 'get set' : 
+    System.Drawing.Rectangle Bounds 'get ' : 
+    System.Drawing.Graphics Graphics 'get ' : 
+  Methods:
+    get_Cell(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Handled(): PrivateScope, Public, HideBySig, SpecialName
+    set_Handled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Bounds(): PrivateScope, Public, HideBySig, SpecialName
+    get_Graphics(): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.BoundItemsCollection`1[T]: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[T]
+    System.Collections.IEnumerable
+    System.Collections.IList
+    System.Collections.ICollection
+  Properties:
+    Int32 Count 'get ' : 
+    T Item [Int32] 'get set' : 
+  Events:
+    System.EventHandler`1[VIBlend.WinForms.DataGridView.CollectionChangedEventArgs] CollectionChanged: 
+  Methods:
+    add_CollectionChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_CollectionChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    Add(T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Clear(): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IndexOf(T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Insert(T, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Contains(T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Remove(T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveAt(Int32): PrivateScope, Public, HideBySig
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Item(Int32, T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Struct VIBlend.WinForms.DataGridView.Filters.FilterOperator: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.Filters.FilterOperator AND = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.FilterOperator OR = 1 : Public, Static, Literal, HasDefault
+Interface VIBlend.WinForms.DataGridView.Filters.IFilterBase: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Evaluate(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface VIBlend.WinForms.DataGridView.Filters.IFilter`1[T]: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Type parameter: T
+  Interfaces:
+    VIBlend.WinForms.DataGridView.Filters.IFilterBase
+  Properties:
+    T Value    'get set' : 
+  Methods:
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Value(T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class VIBlend.WinForms.DataGridView.Filters.FilterGroup`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.Filters.IFilterBase
+  Properties:
+    Int32 FiltersCount 'get ' : 
+  Methods:
+    get_FiltersCount(): PrivateScope, Public, HideBySig, SpecialName
+    AddFilter(FilterOperator, IFilterBase): PrivateScope, Public, HideBySig
+    RemoveFilter(IFilterBase): PrivateScope, Public, HideBySig
+    GetOperatorAt(Int32): PrivateScope, Public, HideBySig
+    SetOperatorAt(Int32, FilterOperator): PrivateScope, Public, HideBySig
+    GetFilterAt(Int32): PrivateScope, Public, HideBySig
+    SetFilterAt(Int32, IFilterBase): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    Evaluate(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator EMPTY = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator NOT_EMPTY = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator NULL = 2 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator NOT_NULL = 3 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator CONTAINS = 4 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator CONTAINS_CASE_SENSITIVE = 5 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator DOES_NOT_CONTAIN = 6 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator DOES_NOT_CONTAIN_CASE_SENSITIVE = 7 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator STARTS_WITH = 8 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator STARTS_WITH_CASE_SENSITIVE = 9 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator ENDS_WITH = 10 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator ENDS_WITH_CASE_SENSITIVE = 11 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator EQUAL = 12 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator EQUAL_CASE_SENSITIVE = 13 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator REGEX = 14 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.Filters.StringFilter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.Filters.IFilter`1[System.String]
+    VIBlend.WinForms.DataGridView.Filters.IFilterBase
+  Properties:
+    System.String Value 'get set' : 
+    VIBlend.WinForms.DataGridView.Filters.StringFilterComparisonOperator ComparisonOperator 'get set' : 
+  Methods:
+    get_Value(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Value(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ComparisonOperator(): PrivateScope, Public, HideBySig, SpecialName
+    set_ComparisonOperator(StringFilterComparisonOperator): PrivateScope, Public, HideBySig, SpecialName
+Struct VIBlend.WinForms.DataGridView.Filters.NumericComparisonOperator: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.Filters.NumericComparisonOperator EQUAL = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.NumericComparisonOperator NOT_EQUAL = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.NumericComparisonOperator LESS_THAN = 2 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.NumericComparisonOperator LESS_THAN_OR_EQUAL = 3 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.NumericComparisonOperator GREATER_THAN = 4 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.NumericComparisonOperator GREATER_THAN_OR_EQUAL = 5 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.NumericComparisonOperator NULL = 6 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.NumericComparisonOperator NOT_NULL = 7 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.Filters.NumericFilter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.Filters.IFilter`1[System.Nullable`1[System.Double]]
+    VIBlend.WinForms.DataGridView.Filters.IFilterBase
+  Properties:
+    System.Nullable`1[System.Double] Value 'get set' : 
+    VIBlend.WinForms.DataGridView.Filters.NumericComparisonOperator ComparisonOperator 'get set' : 
+  Methods:
+    get_Value(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Value(Nullable`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ComparisonOperator(): PrivateScope, Public, HideBySig, SpecialName
+    set_ComparisonOperator(NumericComparisonOperator): PrivateScope, Public, HideBySig, SpecialName
+Struct VIBlend.WinForms.DataGridView.Filters.DateTimeComparisonOperator: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.Filters.DateTimeComparisonOperator EQUAL = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.DateTimeComparisonOperator NOT_EQUAL = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.DateTimeComparisonOperator LESS_THAN = 2 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.DateTimeComparisonOperator LESS_THAN_OR_EQUAL = 3 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.DateTimeComparisonOperator GREATER_THAN = 4 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.DateTimeComparisonOperator GREATER_THAN_OR_EQUAL = 5 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.DateTimeComparisonOperator NULL = 6 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.Filters.DateTimeComparisonOperator NOT_NULL = 7 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.Filters.DateTimeFilter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.Filters.IFilter`1[System.Nullable`1[System.DateTime]]
+    VIBlend.WinForms.DataGridView.Filters.IFilterBase
+  Properties:
+    System.Nullable`1[System.DateTime] Value 'get set' : 
+    VIBlend.WinForms.DataGridView.Filters.DateTimeComparisonOperator ComparisonOperator 'get set' : 
+  Methods:
+    get_Value(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Value(Nullable`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ComparisonOperator(): PrivateScope, Public, HideBySig, SpecialName
+    set_ComparisonOperator(DateTimeComparisonOperator): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.Filters.SetFilter`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.Filters.IFilterBase
+  Properties:
+    Int32 ItemsCount 'get ' : 
+    Boolean IsStateAllTrue 'get ' : 
+  Methods:
+    AddItem(T): PrivateScope, Public, HideBySig
+    RemoveItem(T): PrivateScope, Public, HideBySig
+    ContainsItem(T): PrivateScope, Public, HideBySig
+    get_ItemsCount(): PrivateScope, Public, HideBySig, SpecialName
+    SetItemState(T, Boolean): PrivateScope, Public, HideBySig
+    GetItemState(T): PrivateScope, Public, HideBySig
+    get_IsStateAllTrue(): PrivateScope, Public, HideBySig, SpecialName
+    SetAllItemsState(Boolean): PrivateScope, Public, HideBySig
+Class VIBlend.WinForms.DataGridView.BoundFieldEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.HierarchyItem, VIBlend.WinForms.DataGridView.BoundField, VIBlend.WinForms.DataGridView.vDataGridView): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.BoundField BoundField 'get ' : 
+    Int32 BoundFieldIndex 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem HierarchyItem 'get ' : 
+    VIBlend.WinForms.DataGridView.vDataGridView GridControl 'get ' : 
+  Methods:
+    get_BoundField(): PrivateScope, Public, HideBySig, SpecialName
+    get_BoundFieldIndex(): PrivateScope, Public, HideBySig, SpecialName
+    get_HierarchyItem(): PrivateScope, Public, HideBySig, SpecialName
+    get_GridControl(): PrivateScope, Public, HideBySig, SpecialName
+Struct VIBlend.WinForms.DataGridView.HeaderGroupsAlignment: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.HeaderGroupsAlignment Near = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.HeaderGroupsAlignment Center = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.HeaderGroupsAlignment Far = 2 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.GroupHeaderDragEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.DataGridGroupHeaderItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.DataGridGroupHeaderItem HeaderItem 'get ' : 
+  Methods:
+    get_HeaderItem(): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.GroupHeaderDragCancelEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.DataGridGroupHeaderItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.DataGridGroupHeaderItem HeaderItem 'get ' : 
+  Methods:
+    get_HeaderItem(): PrivateScope, Public, HideBySig, SpecialName
+Struct VIBlend.WinForms.DataGridView.HierarchyItemFilter: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    VIBlend.WinForms.DataGridView.HierarchyItem Item : Public
+    VIBlend.WinForms.DataGridView.Filters.IFilterBase Filter : Public
+Struct VIBlend.WinForms.DataGridView.SortingDirection: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.SortingDirection Ascending = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.SortingDirection Descending = 1 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.Hierarchy: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Fixed 'get set' : 
+    VIBlend.WinForms.DataGridView.nsCollection`1[VIBlend.WinForms.DataGridView.HierarchyItemFilter] Filters 'get ' : 
+    Boolean IsFiltered 'get ' : 
+    Boolean IsSorted 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem SortItem 'get set' : 
+    VIBlend.WinForms.DataGridView.SortingDirection SortingDirection 'get set' : 
+    Boolean Visible 'get set' : 
+    VIBlend.WinForms.DataGridView.HierarchyItemsCollection Items 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItemsCollection SummaryItems 'get ' : 
+    Boolean ShowExpandCollapseButtons 'get set' : 
+    Int32 HierarchyDepth 'get ' : 
+    Int32 X    'get set' : 
+    Int32 Y    'get set' : 
+    Int32 TotalItemsCount 'get ' : 
+    VIBlend.WinForms.DataGridView.vDataGridView GridControl 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem[] HiddenItems 'get ' : 
+    VIBlend.WinForms.DataGridView.nsCollection`1[System.Int32] ColumnWidths 'get ' : 
+    Boolean AllowResize 'get set' : 
+    Boolean AllowDragDrop 'get set' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem[] SelectedItems 'get ' : 
+  Events:
+    System.EventHandler FiltersChanged: 
+    System.EventHandler SortingChanged: 
+  Methods:
+    get_AllowResize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AllowResize(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AllowDragDrop(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowDragDrop(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    SelectItem(HierarchyItem): PrivateScope, Public, HideBySig
+    UnSelectItem(HierarchyItem): PrivateScope, Public, HideBySig
+    ClearSelection(): PrivateScope, Public, HideBySig
+    IsItemSelected(HierarchyItem): PrivateScope, Public, HideBySig
+    get_SelectedItems(): PrivateScope, Public, HideBySig, SpecialName
+    get_Fixed(): PrivateScope, Public, HideBySig, SpecialName
+    set_Fixed(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Filters(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsFiltered(): PrivateScope, Public, HideBySig, SpecialName
+    add_FiltersChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FiltersChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_IsSorted(): PrivateScope, Public, HideBySig, SpecialName
+    get_SortItem(): PrivateScope, Public, HideBySig, SpecialName
+    get_SortingDirection(): PrivateScope, Public, HideBySig, SpecialName
+    SortBy(HierarchyItem, SortingDirection): PrivateScope, Public, HideBySig
+    SortBy(HierarchyItem, SortingDirection, IComparer`1): PrivateScope, Public, HideBySig
+    RemoveSort(): PrivateScope, Public, HideBySig
+    add_SortingChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SortingChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_Visible(): PrivateScope, Public, HideBySig, SpecialName
+    set_Visible(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Items(): PrivateScope, Public, HideBySig, SpecialName
+    get_SummaryItems(): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowExpandCollapseButtons(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowExpandCollapseButtons(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_HierarchyDepth(): PrivateScope, Public, HideBySig, SpecialName
+    GetItemByUniqueID(String): PrivateScope, Public, HideBySig
+    HitTest(Point): PrivateScope, Public, HideBySig
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    GetNextItem(HierarchyItem): PrivateScope, Public, HideBySig
+    GetPreviousItem(HierarchyItem): PrivateScope, Public, HideBySig
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    get_TotalItemsCount(): PrivateScope, Public, HideBySig, SpecialName
+    ExpandAllItems(): PrivateScope, Public, HideBySig
+    CollapseAllItems(): PrivateScope, Public, HideBySig
+    SetColumnWidth(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetRowHeight(HierarchyItem, Int32): PrivateScope, Public, HideBySig
+    AutoResize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AutoResize(AutoResizeMode): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Clear(): PrivateScope, Public, HideBySig
+    GetChildItemsRecursive(): PrivateScope, Public, HideBySig
+    get_GridControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_HiddenItems(): PrivateScope, Public, HideBySig, SpecialName
+    ShowHiddenItems(): PrivateScope, Public, HideBySig
+    get_ColumnWidths(): PrivateScope, Public, HideBySig, SpecialName
+    IsSummaryItem(HierarchyItem): PrivateScope, Public, HideBySig
+Class VIBlend.WinForms.DataGridView.HierarchyItemMouseEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.MouseEventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.HierarchyItem, System.Windows.Forms.MouseEventArgs): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.HierarchyItem HierarchyItem 'get set' : 
+  Methods:
+    get_HierarchyItem(): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.MaskEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.Controls.vMaskedTextBox
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+  Methods:
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnCloseEditor(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.ColumnChooser: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.Controls.RibbonForm
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.vDataGridView DataGrid 'get set' : 
+  Methods:
+    get_DataGrid(): PrivateScope, Public, HideBySig, SpecialName
+    Populate(): PrivateScope, Public, HideBySig
+Struct VIBlend.WinForms.DataGridView.CellEditorType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.CellEditorType TextBox = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CellEditorType ComboBox = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CellEditorType Button = 2 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CellEditorType CheckBox = 3 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CellEditorType TrackBar = 4 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CellEditorType NumericUpDown = 5 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CellEditorType ProgressBar = 6 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CellEditorType TimePicker = 7 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CellEditorType Currency = 8 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CellEditorType Percentage = 9 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CellEditorType FixedPoint = 10 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CellEditorType Number = 11 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CellEditorType ColorPicker = 12 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.CellEditorType Custom = 13 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.FixedPointEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.Controls.vFixedPointEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.GridCell EditCell 'get ' : 
+    Boolean HandleEnterKey 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+  Methods:
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditCell(): PrivateScope, Public, HideBySig, SpecialName
+    get_HandleEnterKey(): PrivateScope, Public, HideBySig, SpecialName
+    set_HandleEnterKey(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnCloseEditor(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.NumberEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.Controls.vNumberEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.GridCell EditCell 'get ' : 
+    Boolean HandleEnterKey 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+  Methods:
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditCell(): PrivateScope, Public, HideBySig, SpecialName
+    get_HandleEnterKey(): PrivateScope, Public, HideBySig, SpecialName
+    set_HandleEnterKey(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnCloseEditor(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.BindingProgressEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 RecordsProcessed 'get set' : 
+    Int32 RecordsCount 'get set' : 
+    Double ProgressPercentage 'get ' : 
+  Methods:
+    get_RecordsProcessed(): PrivateScope, Public, HideBySig, SpecialName
+    set_RecordsProcessed(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_RecordsCount(): PrivateScope, Public, HideBySig, SpecialName
+    set_RecordsCount(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ProgressPercentage(): PrivateScope, Public, HideBySig, SpecialName
+Struct VIBlend.WinForms.DataGridView.PivotTotalsMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.PivotTotalsMode DISPLAY_SUBTOTALS = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotTotalsMode DISPLAY_GRANDTOTALS = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotTotalsMode DISPLAY_BOTH = 2 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.BoundFieldFilter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String DataField 'get set' : 
+    System.Collections.Generic.List`1[VIBlend.WinForms.DataGridView.Filters.IFilterBase] Filters 'get set' : 
+  Methods:
+    get_DataField(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataField(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Filters(): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.BoundField: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Text 'get set' : 
+    System.String DataField 'get set' : 
+    VIBlend.WinForms.DataGridView.IEditor CellsEditor 'get set' : 
+    VIBlend.Utilities.GridCellStyle CellsStyle 'get set' : 
+    VIBlend.WinForms.DataGridView.DisplaySettings CellsDisplaySettings 'get set' : 
+    System.IFormatProvider CellsFormatProvider 'get set' : 
+    System.String CellsFormatString 'get set' : 
+    System.Drawing.ContentAlignment CellsImageAlignment 'get set' : 
+    System.Drawing.ContentAlignment CellsTextAlignment 'get set' : 
+    System.Windows.Forms.TextImageRelation CellsTextImageRelation 'get set' : 
+    Boolean CellsTextWrap 'get set' : 
+    Boolean AllowFiltering 'get set' : 
+    VIBlend.WinForms.DataGridView.GridItemSortMode SortMode 'get set' : 
+    Boolean Resizable 'get set' : 
+    Boolean TextWrap 'get set' : 
+    Int32 Width 'get set' : 
+  Methods:
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DataField(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataField(String): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsEditor(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsEditor(IEditor): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsStyle(GridCellStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsDisplaySettings(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsDisplaySettings(DisplaySettings): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsFormatProvider(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsFormatProvider(IFormatProvider): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsFormatString(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsFormatString(String): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsImageAlignment(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsImageAlignment(ContentAlignment): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsTextAlignment(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsTextAlignment(ContentAlignment): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsTextImageRelation(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsTextImageRelation(TextImageRelation): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsTextWrap(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsTextWrap(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowFiltering(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowFiltering(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_SortMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_SortMode(GridItemSortMode): PrivateScope, Public, HideBySig, SpecialName
+    get_Resizable(): PrivateScope, Public, HideBySig, SpecialName
+    set_Resizable(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_TextWrap(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextWrap(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    set_Width(Int32): PrivateScope, Public, HideBySig, SpecialName
+Struct VIBlend.WinForms.DataGridView.PivotFieldFunction: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.PivotFieldFunction Sum = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotFieldFunction Count = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotFieldFunction Average = 2 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotFieldFunction Max = 3 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotFieldFunction Min = 4 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotFieldFunction Product = 5 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.BoundValueField: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.DataGridView.BoundField
+    Void .ctor(System.String, System.String, VIBlend.WinForms.DataGridView.PivotFieldFunction): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.PivotFieldFunction Function 'get set' : 
+  Methods:
+    get_Function(): PrivateScope, Public, HideBySig, SpecialName
+    set_Function(PivotFieldFunction): PrivateScope, Public, HideBySig, SpecialName
+Struct VIBlend.WinForms.DataGridView.GridBindingState: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.GridBindingState Unbound = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridBindingState Bound = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridBindingState BoundPivot = 2 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.vDataGridViewPivotDesign: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.SplitContainer splitContainer1 : Public
+    VIBlend.WinForms.Controls.vListBox listBoxBoundFields : Public
+    System.Windows.Forms.Label label1 : Public
+    System.Windows.Forms.Label label2 : Public
+    System.Windows.Forms.ImageList imageList1 : Public
+    VIBlend.WinForms.Controls.vListBox listBoxDataArea : Public
+    VIBlend.WinForms.Controls.vListBox listBoxColumnArea : Public
+    VIBlend.WinForms.Controls.vListBox listBoxRowArea : Public
+    VIBlend.WinForms.Controls.vCheckBox vCheckBox1 : Public
+    VIBlend.WinForms.Controls.vButton vButton1 : Public
+    VIBlend.WinForms.Controls.vButton vButton4 : Public
+    VIBlend.WinForms.Controls.vButton vButton3 : Public
+    VIBlend.WinForms.Controls.vButton vButton2 : Public
+  Properties:
+    System.Windows.Forms.Orientation AreasOrientation 'get set' : 
+    VIBlend.WinForms.DataGridView.PivotDesignPanelLocalizationBase Localization 'get set' : 
+    VIBlend.WinForms.DataGridView.vDataGridView DataGridView 'get set' : 
+    VIBlend.Utilities.VIBLEND_THEME VIBlendTheme 'get set' : 
+  Events:
+    System.EventHandler PivotTableUpdated: 
+    VIBlend.WinForms.DataGridView.PivotValueFieldTextNeededEventHandler PivotValueFieldTextNeeded: 
+  Methods:
+    add_PivotTableUpdated(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_PivotTableUpdated(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_PivotValueFieldTextNeeded(PivotValueFieldTextNeededEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_PivotValueFieldTextNeeded(PivotValueFieldTextNeededEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_AreasOrientation(): PrivateScope, Public, HideBySig, SpecialName
+    set_AreasOrientation(Orientation): PrivateScope, Public, HideBySig, SpecialName
+    get_Localization(): PrivateScope, Public, HideBySig, SpecialName
+    set_Localization(PivotDesignPanelLocalizationBase): PrivateScope, Public, HideBySig, SpecialName
+    UpdatePivotTable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_DataGridView(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataGridView(vDataGridView): PrivateScope, Public, HideBySig, SpecialName
+    BeginUpdate(): PrivateScope, Public, HideBySig
+    EndUpdate(): PrivateScope, Public, HideBySig
+    UpdateFields(): PrivateScope, Public, HideBySig
+    get_VIBlendTheme(): PrivateScope, Public, HideBySig, SpecialName
+    set_VIBlendTheme(VIBLEND_THEME): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.PivotValueFieldTextNeededEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, PivotValueFieldTextNeededEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, PivotValueFieldTextNeededEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.PivotValueFieldTextNeededEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    VIBlend.WinForms.DataGridView.BoundValueField Field : Public
+  Properties:
+    Boolean Handled 'get set' : 
+  Methods:
+    get_Handled(): PrivateScope, Public, HideBySig, SpecialName
+    set_Handled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.PivotDesignPanelLocalizationBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Methods:
+    GetString(PivotDesignLocalizationNames): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class VIBlend.WinForms.DataGridView.PivotDesignPanelLocalization: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.DataGridView.PivotDesignPanelLocalizationBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetString(PivotDesignLocalizationNames): PrivateScope, Public, Virtual, HideBySig
+Struct VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames MoveUpItem = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames MoveDownItem = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames MoveToRowAreaItem = 2 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames MoveToColumnAreaItem = 3 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames MoveToDataAreaItem = 4 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames RemoveFieldItem = 5 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames SelectItem = 6 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames FunctionItem = 7 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames AverageItem = 8 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames CountItem = 9 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames MaxItem = 10 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames MinItem = 11 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames ProductItem = 12 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.PivotDesignLocalizationNames SumItem = 13 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.vDataGridViewSearchHeader: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Control
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.vDataGridView DataGridView 'get set' : 
+    Boolean IsThemeSynchronized 'get set' : 
+    VIBlend.Utilities.GridTheme Theme 'get set' : 
+    VIBlend.Utilities.VIBLEND_THEME VIBlendTheme 'get set' : 
+    System.Drawing.Color TextColor 'get set' : 
+    Boolean ShowFoundRowsCount 'get set' : 
+    System.String SearchByString 'get set' : 
+    System.String GoString 'get set' : 
+    System.String Condition 'get set' : 
+  Methods:
+    get_DataGridView(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataGridView(vDataGridView): PrivateScope, Public, HideBySig, SpecialName
+    WireEvents(): PrivateScope, Public, HideBySig
+    UnwireEvents(): PrivateScope, Public, HideBySig
+    get_IsThemeSynchronized(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsThemeSynchronized(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Theme(): PrivateScope, Public, HideBySig, SpecialName
+    set_Theme(GridTheme): PrivateScope, Public, HideBySig, SpecialName
+    get_VIBlendTheme(): PrivateScope, Public, HideBySig, SpecialName
+    set_VIBlendTheme(VIBLEND_THEME): PrivateScope, Public, HideBySig, SpecialName
+    SetTheme(VIBLEND_THEME): PrivateScope, Public, HideBySig
+    get_TextColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    RefreshSearchHeader(): PrivateScope, Public, HideBySig
+    RefreshControl(): PrivateScope, Public, HideBySig
+    FindAllRows(String, HierarchyItem, StringFilterComparisonOperator): PrivateScope, Public, HideBySig
+    get_ShowFoundRowsCount(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowFoundRowsCount(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_SearchByString(): PrivateScope, Public, HideBySig, SpecialName
+    set_SearchByString(String): PrivateScope, Public, HideBySig, SpecialName
+    get_GoString(): PrivateScope, Public, HideBySig, SpecialName
+    set_GoString(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Condition(): PrivateScope, Public, HideBySig, SpecialName
+    set_Condition(String): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.PercentageEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.Controls.vPercentageEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.GridCell EditCell 'get ' : 
+    Boolean HandleEnterKey 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+  Methods:
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditCell(): PrivateScope, Public, HideBySig, SpecialName
+    get_HandleEnterKey(): PrivateScope, Public, HideBySig, SpecialName
+    set_HandleEnterKey(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnCloseEditor(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.CellMouseEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.MouseEventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.GridCell, System.Windows.Forms.MouseButtons, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.ICell
+  Properties:
+    VIBlend.WinForms.DataGridView.GridCell Cell 'get ' : 
+  Methods:
+    get_Cell(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class VIBlend.WinForms.DataGridView.ButtonEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+  Methods:
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnCloseEditor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct VIBlend.WinForms.DataGridView.GridLinesDisplayMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.GridLinesDisplayMode DISPLAY_ALL = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridLinesDisplayMode DISPLAY_ROW_LINES = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridLinesDisplayMode DISPLAY_COLUMN_LINES = 2 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridLinesDisplayMode DISPLAY_NONE = 3 : Public, Static, Literal, HasDefault
+Struct VIBlend.WinForms.DataGridView.ImagePositions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.ImagePositions Center = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.ImagePositions Tile = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.ImagePositions Stretch = 2 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.CellValueNeededEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(VIBlend.WinForms.DataGridView.HierarchyItem, VIBlend.WinForms.DataGridView.HierarchyItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    VIBlend.WinForms.DataGridView.HierarchyItem RowItem : Public
+    VIBlend.WinForms.DataGridView.HierarchyItem ColumnItem : Public
+    System.Object CellValue : Public
+    Int32 CellImageIndex : Public
+Class VIBlend.WinForms.DataGridView.CellsArea: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(VIBlend.WinForms.DataGridView.vDataGridView): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.INotifyPropertyChanged
+  Properties:
+    VIBlend.WinForms.DataGridView.vDataGridView GridControl 'get ' : 
+    Int32 CellSpanGroupsCount 'get ' : 
+    Boolean AllowCellMerge 'get set' : 
+    VIBlend.WinForms.DataGridView.GridCell EditCell 'get ' : 
+    VIBlend.WinForms.DataGridView.GridCell[] NonEmptyCells 'get ' : 
+    VIBlend.WinForms.DataGridView.GridCell[] Cells 'get ' : 
+    System.Collections.Generic.Dictionary`2[System.String,VIBlend.WinForms.DataGridView.CellsArea+ConditionalFormattingGroup] ConditionalFormattingGroups 'get ' : 
+    Boolean ConditionalFormattingEnabled 'get set' : 
+    Int32 SelectedCellsCount 'get ' : 
+    VIBlend.WinForms.DataGridView.GridCell[] SelectedCells 'get ' : 
+  Events:
+    System.ComponentModel.PropertyChangedEventHandler PropertyChanged: 
+  Methods:
+    remove_PropertyChanged(PropertyChangedEventHandler): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SetItemConditionalFormattingGroup(HierarchyItem, String): PrivateScope, Public, HideBySig (Obsolete)
+    SetCellConditionalFormattingGroup(HierarchyItem, String): PrivateScope, Public, HideBySig
+    SetCellConditionalFormattingGroup(GridCell, String): PrivateScope, Public, HideBySig
+    SetCellConditionalFormattingGroup(HierarchyItem, HierarchyItem, String): PrivateScope, Public, HideBySig
+    get_ConditionalFormattingGroups(): PrivateScope, Public, HideBySig, SpecialName
+    get_ConditionalFormattingEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConditionalFormattingEnabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    GetCellAbove(GridCell): PrivateScope, Public, HideBySig
+    GetCellBelow(GridCell): PrivateScope, Public, HideBySig
+    GetCellLeft(GridCell): PrivateScope, Public, HideBySig
+    GetCellRight(GridCell): PrivateScope, Public, HideBySig
+    ClearCellFormatSettings(): PrivateScope, Public, HideBySig
+    SetCellFormatString(HierarchyItem, HierarchyItem, String): PrivateScope, Public, HideBySig
+    GetCellFormatString(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    SetCellFormatProvider(HierarchyItem, HierarchyItem, IFormatProvider): PrivateScope, Public, HideBySig
+    GetCellFormatProvider(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    GetCellFormattedText(GridCell): PrivateScope, Public, HideBySig
+    ClearSelection(): PrivateScope, Public, HideBySig
+    SelectCell(GridCell): PrivateScope, Public, HideBySig
+    SelectCell(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    UnSelectCell(GridCell): PrivateScope, Public, HideBySig
+    UnSelectCell(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    IsCellSelected(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    get_SelectedCellsCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectedCells(): PrivateScope, Public, HideBySig, SpecialName
+    get_GridControl(): PrivateScope, Public, HideBySig, SpecialName
+    SetCellImage(HierarchyItem, HierarchyItem, Int32): PrivateScope, Public, HideBySig
+    GetCellImageIndex(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    SetCellImagePosition(HierarchyItem, HierarchyItem, ImagePositions): PrivateScope, Public, HideBySig
+    GetCellImagePosition(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    SetCellValue(HierarchyItem, HierarchyItem, Object): PrivateScope, Public, HideBySig
+    GetCellValue(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    SetCellSpan(HierarchyItem, HierarchyItem, Int32, Int32): PrivateScope, Public, HideBySig
+    GetCellSpan(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    get_CellSpanGroupsCount(): PrivateScope, Public, HideBySig, SpecialName
+    GetCellSpansList(): PrivateScope, Public, HideBySig
+    IsCellMerged(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    SetCellDrawStyle(HierarchyItem, HierarchyItem, GridCellStyle): PrivateScope, Public, HideBySig
+    SetCellDrawStyle(HierarchyItem, GridCellStyle): PrivateScope, Public, HideBySig (Obsolete)
+    GetCellDrawStyle(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    SetCellDisplaySettings(HierarchyItem, HierarchyItem, DisplaySettings): PrivateScope, Public, HideBySig
+    SetCellDisplaySettings(HierarchyItem, DisplaySettings): PrivateScope, Public, HideBySig (Obsolete)
+    GetCellDisplaySettings(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    GetCellTextImageRelation(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    SetCellTextImageRelation(HierarchyItem, HierarchyItem, TextImageRelation): PrivateScope, Public, HideBySig
+    SetCellAutoSize(HierarchyItem, HierarchyItem, Boolean): PrivateScope, Public, HideBySig
+    GetCellAutoSize(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    SetCellTextAlignment(HierarchyItem, HierarchyItem, ContentAlignment): PrivateScope, Public, HideBySig
+    SetCellTextAlignment(HierarchyItem, ContentAlignment): PrivateScope, Public, HideBySig (Obsolete)
+    GetCellTextAlignment(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    SetCellImageAlignment(HierarchyItem, HierarchyItem, ContentAlignment): PrivateScope, Public, HideBySig
+    SetCellImageAlignment(HierarchyItem, ContentAlignment): PrivateScope, Public, HideBySig (Obsolete)
+    GetCellImageAlignment(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    SetCellTextWrap(HierarchyItem, HierarchyItem, Boolean): PrivateScope, Public, HideBySig
+    SetCellTextWrap(HierarchyItem, Boolean): PrivateScope, Public, HideBySig (Obsolete)
+    GetCellTextWrap(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    SetCellDataSource(HierarchyItem, HierarchyItem, GridCellDataSource): PrivateScope, Public, HideBySig
+    SetCellDataSource(HierarchyItem, GridCellDataSource): PrivateScope, Public, HideBySig (Obsolete)
+    GetCellDataSource(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    SetCellEditor(HierarchyItem, HierarchyItem, IEditor): PrivateScope, Public, HideBySig
+    GetCellEditor(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    SetItemEditor(HierarchyItem, IEditor): PrivateScope, Public, HideBySig (Obsolete)
+    SetCellEditor(HierarchyItem, IEditor): PrivateScope, Public, HideBySig (Obsolete)
+    GetCellEditor(HierarchyItem): PrivateScope, Public, HideBySig (Obsolete)
+    get_AllowCellMerge(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowCellMerge(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_EditCell(): PrivateScope, Public, HideBySig, SpecialName
+    get_NonEmptyCells(): PrivateScope, Public, HideBySig, SpecialName
+    get_Cells(): PrivateScope, Public, HideBySig, SpecialName
+    ClearCellsSpan(): PrivateScope, Public, HideBySig
+    RemoveCellSpan(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    HitTest(Point): PrivateScope, Public, HideBySig
+    UnlockAllCells(): PrivateScope, Public, HideBySig
+    LockCell(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    UnlockCell(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    IsLockedCell(HierarchyItem, HierarchyItem): PrivateScope, Public, HideBySig
+    add_PropertyChanged(PropertyChangedEventHandler): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class VIBlend.WinForms.DataGridView.CellsArea+ConditionalFormattingGroup: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetCFColor(Double): PrivateScope, Public, HideBySig
+    SetConditionalFormattingColorScale(GridCellCFColorScale): PrivateScope, Public, HideBySig
+    SetCustomConditionalFormattingColorScale(Color[]): PrivateScope, Public, HideBySig
+Class VIBlend.WinForms.DataGridView.HierarchyItemsCollection: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(VIBlend.WinForms.DataGridView.HierarchyItem, VIBlend.WinForms.DataGridView.Hierarchy): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[VIBlend.WinForms.DataGridView.HierarchyItem]
+    System.Collections.IEnumerable
+    System.Collections.IList
+    System.Collections.ICollection
+  Fields:
+    VIBlend.WinForms.DataGridView.HierarchyItem ownerItem : Public
+    VIBlend.WinForms.DataGridView.Hierarchy parentHierarchy : Public
+  Properties:
+    Int32 Count 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem Item [Int32] 'get set' : 
+    VIBlend.WinForms.DataGridView.Hierarchy OwnerHierarchy 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem OwnerItem 'get set' : 
+  Events:
+    System.EventHandler CollectionChanged: 
+  Methods:
+    add_CollectionChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CollectionChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    Add(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Add(HierarchyItem): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Clear(): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IndexOf(HierarchyItem): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Insert(HierarchyItem, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Remove(HierarchyItem): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveAt(Int32): PrivateScope, Public, HideBySig
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Item(Int32, HierarchyItem): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OwnerHierarchy(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OwnerItem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Struct VIBlend.WinForms.DataGridView.AutoResizeMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.AutoResizeMode FIT_ITEM_CONTENT = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.AutoResizeMode FIT_CELL_CONTENT = 2 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.AutoResizeMode FIT_ALL = 0 : Public, Static, Literal, HasDefault
+Struct VIBlend.WinForms.DataGridView.GridItemSortMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Byte value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.GridItemSortMode Default = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridItemSortMode Automatic = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridItemSortMode NotSortable = 2 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.HierarchyItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.INotifyPropertyChanged
+  Properties:
+    Boolean Expanded 'get set' : 
+    Boolean Enabled 'get set' : 
+    Boolean Filtered 'get set' : 
+    Boolean AllowFiltering 'get set' : 
+    Boolean Resizable 'get set' : 
+    Boolean ExpandCollapseEnabled 'get set' : 
+    Boolean TextWrap 'get set' : 
+    Boolean Fixed 'get set' : 
+    Boolean Hidden 'get set' : 
+    Boolean IsRowsHierarchyItem 'get ' : 
+    Boolean IsColumnsHierarchyItem 'get set' : 
+    Boolean IsTotal 'get set' : 
+    VIBlend.WinForms.DataGridView.GridItemSortMode SortMode 'get set' : 
+    VIBlend.WinForms.DataGridView.BoundField BoundField 'get set' : 
+    Int32 ImageIndex 'get set' : 
+    VIBlend.WinForms.DataGridView.Hierarchy Hierarchy 'get set' : 
+    System.Drawing.ContentAlignment TextAlignment 'get set' : 
+    Int32 TextImageIndicatorOffset 'get set' : 
+    System.Drawing.ContentAlignment ImageAlignment 'get set' : 
+    Int32 TextImageOffset 'get set' : 
+    System.Windows.Forms.TextImageRelation TextImageRelation 'get set' : 
+    Int32 ChildItemsDepth 'get ' : 
+    Int32 ItemsCount 'get ' : 
+    Int32 WidthWithChildren 'get ' : 
+    Int32 HeightWithChildren 'get ' : 
+    VIBlend.Utilities.HierarchyItemStyle HierarchyItemStyleNormal 'get set' : 
+    VIBlend.Utilities.HierarchyItemStyle HierarchyItemStyleSelected 'get set' : 
+    VIBlend.Utilities.HierarchyItemStyle HierarchyItemStyleDisabled 'get set' : 
+    Int32 Width 'get set' : 
+    Int32 Height 'get set' : 
+    Int32 X    'get set' : 
+    Int32 Y    'get set' : 
+    Boolean Visible 'get ' : 
+    Boolean Selected 'get set' : 
+    Boolean IsItemCellSelected 'get ' : 
+    System.Drawing.Rectangle DrawBounds 'get ' : 
+    System.String TooltipText 'get set' : 
+    System.String Caption 'get set' : 
+    System.Type ContentType 'get set' : 
+    VIBlend.WinForms.DataGridView.GridCellDataSource CellsDataSource 'get set' : 
+    VIBlend.WinForms.DataGridView.IEditor CellsEditor 'get set' : 
+    System.IFormatProvider CellsFormatProvider 'get set' : 
+    System.String CellsFormatString 'get set' : 
+    VIBlend.Utilities.GridCellStyle CellsStyle 'get set' : 
+    Boolean CellsTextWrap 'get set' : 
+    System.Drawing.ContentAlignment CellsTextAlignment 'get set' : 
+    System.Windows.Forms.TextImageRelation CellsTextImageRelation 'get set' : 
+    System.Drawing.ContentAlignment CellsImageAlignment 'get set' : 
+    VIBlend.WinForms.DataGridView.DisplaySettings CellsDisplaySettings 'get set' : 
+    Int32 TotalItemsCount 'get ' : 
+    Int32 VisibleItemsCount 'get ' : 
+    Int32 Depth 'get ' : 
+    VIBlend.WinForms.DataGridView.vDataGridView DataGridView 'get ' : 
+    Int32 BoundFieldIndex 'get set' : 
+    Int32 ItemIndex 'get ' : 
+    Int32 VisibleChildItemsCount 'get ' : 
+    System.Collections.Generic.List`1[VIBlend.WinForms.DataGridView.HierarchyItem] FilteredChildItems 'get ' : 
+    Int32 FilteredChildItemsCount 'get ' : 
+    System.Object ItemData 'get set' : 
+    VIBlend.WinForms.DataGridView.HierarchyItemsCollection Items 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItemsCollection SummaryItems 'get ' : 
+    Boolean IsSummaryItem 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem ParentItem 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem ItemAbove 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem ItemBelow 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem ItemLeft 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem ItemRight 'get ' : 
+    System.Object Tag 'get set' : 
+    System.Object ItemValue 'get set' : 
+    VIBlend.WinForms.DataGridView.GridCell[] Cells 'get ' : 
+    VIBlend.WinForms.DataGridView.GridCell[] NonEmptyCells 'get ' : 
+  Events:
+    System.ComponentModel.PropertyChangedEventHandler PropertyChanged: 
+  Methods:
+    GetChildItemsRecursive(): PrivateScope, Public, HideBySig
+    get_Cells(): PrivateScope, Public, HideBySig, SpecialName
+    get_NonEmptyCells(): PrivateScope, Public, HideBySig, SpecialName
+    Expand(): PrivateScope, Public, HideBySig
+    Collapse(): PrivateScope, Public, HideBySig
+    HitTest(Point): PrivateScope, Public, HideBySig
+    get_TooltipText(): PrivateScope, Public, HideBySig, SpecialName
+    set_TooltipText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Caption(): PrivateScope, Public, HideBySig, SpecialName
+    set_Caption(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ContentType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ContentType(Type): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsDataSource(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsDataSource(GridCellDataSource): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsEditor(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsEditor(IEditor): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsFormatProvider(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsFormatProvider(IFormatProvider): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsFormatString(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsFormatString(String): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsStyle(GridCellStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsTextWrap(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsTextWrap(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsTextAlignment(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsTextAlignment(ContentAlignment): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsTextImageRelation(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsTextImageRelation(TextImageRelation): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsImageAlignment(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsImageAlignment(ContentAlignment): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsDisplaySettings(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsDisplaySettings(DisplaySettings): PrivateScope, Public, HideBySig, SpecialName
+    Delete(): PrivateScope, Public, HideBySig
+    get_TotalItemsCount(): PrivateScope, Public, HideBySig, SpecialName
+    GetUniqueID(): PrivateScope, Public, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    get_VisibleItemsCount(): PrivateScope, Public, HideBySig, SpecialName
+    AutoResize(AutoResizeMode): PrivateScope, Public, HideBySig
+    get_Depth(): PrivateScope, Public, HideBySig, SpecialName
+    get_DataGridView(): PrivateScope, Public, HideBySig, SpecialName
+    get_BoundFieldIndex(): PrivateScope, Public, HideBySig, SpecialName
+    get_ItemIndex(): PrivateScope, Public, HideBySig, SpecialName
+    get_VisibleChildItemsCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_FilteredChildItems(): PrivateScope, Public, HideBySig, SpecialName
+    get_FilteredChildItemsCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_ItemData(): PrivateScope, Public, HideBySig, SpecialName
+    set_ItemData(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_Items(): PrivateScope, Public, HideBySig, SpecialName
+    get_SummaryItems(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsSummaryItem(): PrivateScope, Public, HideBySig, SpecialName
+    get_ParentItem(): PrivateScope, Public, HideBySig, SpecialName
+    add_PropertyChanged(PropertyChangedEventHandler): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_PropertyChanged(PropertyChangedEventHandler): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemAbove(): PrivateScope, Public, HideBySig, SpecialName
+    get_ItemBelow(): PrivateScope, Public, HideBySig, SpecialName
+    get_ItemLeft(): PrivateScope, Public, HideBySig, SpecialName
+    get_ItemRight(): PrivateScope, Public, HideBySig, SpecialName
+    get_Tag(): PrivateScope, Public, HideBySig, SpecialName
+    set_Tag(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_ItemValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_ItemValue(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_Expanded(): PrivateScope, Public, HideBySig, SpecialName
+    set_Expanded(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Enabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_Enabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Filtered(): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowFiltering(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowFiltering(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Resizable(): PrivateScope, Public, HideBySig, SpecialName
+    set_Resizable(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ExpandCollapseEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExpandCollapseEnabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_TextWrap(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextWrap(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Fixed(): PrivateScope, Public, HideBySig, SpecialName
+    set_Fixed(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Hidden(): PrivateScope, Public, HideBySig, SpecialName
+    set_Hidden(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_IsRowsHierarchyItem(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsColumnsHierarchyItem(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsTotal(): PrivateScope, Public, HideBySig, SpecialName
+    get_SortMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_SortMode(GridItemSortMode): PrivateScope, Public, HideBySig, SpecialName
+    get_BoundField(): PrivateScope, Public, HideBySig, SpecialName
+    get_ImageIndex(): PrivateScope, Public, HideBySig, SpecialName
+    set_ImageIndex(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Hierarchy(): PrivateScope, Public, HideBySig, SpecialName
+    get_TextAlignment(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextAlignment(ContentAlignment): PrivateScope, Public, HideBySig, SpecialName
+    get_TextImageIndicatorOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextImageIndicatorOffset(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ImageAlignment(): PrivateScope, Public, HideBySig, SpecialName
+    set_ImageAlignment(ContentAlignment): PrivateScope, Public, HideBySig, SpecialName
+    get_TextImageOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextImageOffset(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_TextImageRelation(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextImageRelation(TextImageRelation): PrivateScope, Public, HideBySig, SpecialName
+    get_ChildItemsDepth(): PrivateScope, Public, HideBySig, SpecialName
+    get_ItemsCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_WidthWithChildren(): PrivateScope, Public, HideBySig, SpecialName
+    get_HeightWithChildren(): PrivateScope, Public, HideBySig, SpecialName
+    get_HierarchyItemStyleNormal(): PrivateScope, Public, HideBySig, SpecialName
+    set_HierarchyItemStyleNormal(HierarchyItemStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_HierarchyItemStyleSelected(): PrivateScope, Public, HideBySig, SpecialName
+    set_HierarchyItemStyleSelected(HierarchyItemStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_HierarchyItemStyleDisabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_HierarchyItemStyleDisabled(HierarchyItemStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    set_Width(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    set_Height(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    get_Visible(): PrivateScope, Public, HideBySig, SpecialName
+    get_Selected(): PrivateScope, Public, HideBySig, SpecialName
+    set_Selected(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_IsItemCellSelected(): PrivateScope, Public, HideBySig, SpecialName
+    get_DrawBounds(): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.nsCollection`1[T]: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[T]
+    System.Collections.IEnumerable
+    System.Collections.IList
+    System.Collections.ICollection
+  Fields:
+    VIBlend.WinForms.DataGridView.ColumnsHierarchy ColumnsHierarchy : Public
+    VIBlend.WinForms.DataGridView.RowsHierarchy RowsHierarchy : Public
+  Properties:
+    Int32 Count 'get ' : 
+    T Item [Int32] 'get set' : 
+    System.Object Owner 'get set' : 
+  Events:
+    System.EventHandler CollectionChanged: 
+  Methods:
+    add_CollectionChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CollectionChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    OnCollectionChanged(): PrivateScope, Public, HideBySig
+    Add(T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddRange(nsCollection`1): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetIndex(T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Insert(T, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Remove(T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveAt(Int32): PrivateScope, Public, HideBySig
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Item(Int32, T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Owner(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Owner(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class VIBlend.WinForms.DataGridView.CellParsingEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.DataGridView.CellEventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.GridCell): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Cancel 'get set' : 
+    Boolean ParsingApplied 'get set' : 
+  Methods:
+    get_Cancel(): PrivateScope, Public, HideBySig, SpecialName
+    set_Cancel(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ParsingApplied(): PrivateScope, Public, HideBySig, SpecialName
+    set_ParsingApplied(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Struct VIBlend.WinForms.DataGridView.DisplaySettings: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.DisplaySettings TextOnly = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.DisplaySettings ImageOnly = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.DisplaySettings TextAndImage = 2 : Public, Static, Literal, HasDefault
+Struct VIBlend.WinForms.DataGridView.GridCellDataSource: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.GridCellDataSource NotSet = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridCellDataSource Static = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridCellDataSource Virtual = 2 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridCellDataSource DataBound = 3 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridCellDataSource DataBoundPivot = 4 : Public, Static, Literal, HasDefault
+Struct VIBlend.WinForms.DataGridView.CellSpan: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(VIBlend.WinForms.DataGridView.HierarchyItem, VIBlend.WinForms.DataGridView.HierarchyItem, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    VIBlend.WinForms.DataGridView.HierarchyItem RowItem : Public
+    VIBlend.WinForms.DataGridView.HierarchyItem ColumnItem : Public
+    Int32 RowsCount : Public
+    Int32 ColumnsCount : Public
+Class VIBlend.WinForms.DataGridView.GridCell: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(VIBlend.WinForms.DataGridView.HierarchyItem, VIBlend.WinForms.DataGridView.HierarchyItem, VIBlend.WinForms.DataGridView.CellsArea): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Object EditValue 'get set' : 
+    VIBlend.WinForms.DataGridView.CellsArea CellsArea 'get set' : 
+    System.Drawing.Rectangle Bounds 'get ' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem RowItem 'get set' : 
+    VIBlend.WinForms.DataGridView.HierarchyItem ColumnItem 'get set' : 
+    VIBlend.WinForms.DataGridView.CellSpan CellSpan 'get set' : 
+    VIBlend.WinForms.DataGridView.IEditor Editor 'get set' : 
+    VIBlend.Utilities.GridCellStyle DrawStyle 'get set' : 
+    Boolean Selected 'get set' : 
+    Boolean Locked 'get set' : 
+    Int32 ImageIndex 'get set' : 
+    VIBlend.WinForms.DataGridView.ImagePositions ImagePosition 'get set' : 
+    System.Drawing.ContentAlignment TextAlignment 'get set' : 
+    Boolean TextWrap 'get set' : 
+    System.Windows.Forms.TextImageRelation TextImageRelation 'get set' : 
+    VIBlend.WinForms.DataGridView.DisplaySettings DisplaySettings 'get set' : 
+    System.Drawing.ContentAlignment ImageAlignment 'get set' : 
+    System.Object Value 'get set' : 
+    System.String FormattedText 'get ' : 
+  Methods:
+    get_EditValue(): PrivateScope, Public, HideBySig, SpecialName
+    get_CellsArea(): PrivateScope, Public, HideBySig, SpecialName
+    set_CellsArea(CellsArea): PrivateScope, Public, HideBySig, SpecialName
+    get_Bounds(): PrivateScope, Public, HideBySig, SpecialName
+    get_RowItem(): PrivateScope, Public, HideBySig, SpecialName
+    get_ColumnItem(): PrivateScope, Public, HideBySig, SpecialName
+    get_CellSpan(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CellSpan(CellSpan): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Editor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Editor(IEditor): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DrawStyle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DrawStyle(GridCellStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Selected(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Selected(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Locked(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Locked(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ImageIndex(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ImageIndex(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ImagePosition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ImagePosition(ImagePositions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TextAlignment(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TextAlignment(ContentAlignment): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TextWrap(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TextWrap(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TextImageRelation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TextImageRelation(TextImageRelation): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DisplaySettings(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DisplaySettings(DisplaySettings): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ImageAlignment(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ImageAlignment(ContentAlignment): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Value(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_FormattedText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class VIBlend.WinForms.DataGridView.ColumnsHierarchy: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.DataGridView.Hierarchy
+    Void .ctor(VIBlend.WinForms.DataGridView.vDataGridView): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean AutoStretchColumns 'get set' : 
+    Int32 Height 'get ' : 
+    Int32 Width 'get ' : 
+  Methods:
+    get_AutoStretchColumns(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoStretchColumns(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    ResizeColumnsToFitGridWidth(): PrivateScope, Public, HideBySig
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    AutoResize(): PrivateScope, Public, Virtual, HideBySig
+    AutoResize(AutoResizeMode): PrivateScope, Public, Virtual, HideBySig
+Class VIBlend.WinForms.DataGridView.DataGridGroupHeaderItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(VIBlend.WinForms.DataGridView.BoundField, VIBlend.WinForms.DataGridView.vDataGridViewGroupsHeader): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.vDataGridViewGroupsHeader ParentHeader 'get ' : 
+    VIBlend.WinForms.DataGridView.BoundField Column 'get ' : 
+    System.String Text 'get set' : 
+    System.Drawing.Rectangle Bounds 'get set' : 
+    System.Drawing.Rectangle RenderBounds 'get set' : 
+    System.Drawing.Rectangle CloseButtonRenderBounds 'get set' : 
+    Boolean ShowCloseButton 'get set' : 
+    System.Drawing.Color CloseButtonColor 'get set' : 
+    System.Drawing.Color CloseButtonHighlightColor 'get set' : 
+  Methods:
+    get_ParentHeader(): PrivateScope, Public, HideBySig, SpecialName
+    get_Column(): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Bounds(): PrivateScope, Public, HideBySig, SpecialName
+    get_RenderBounds(): PrivateScope, Public, HideBySig, SpecialName
+    get_CloseButtonRenderBounds(): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowCloseButton(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowCloseButton(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_CloseButtonColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_CloseButtonColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_CloseButtonHighlightColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_CloseButtonHighlightColor(Color): PrivateScope, Public, HideBySig, SpecialName
+Struct VIBlend.WinForms.DataGridView.GridCellCFColorScale: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.GridCellCFColorScale RED_TO_GREEN = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridCellCFColorScale GREEN_TO_RED = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridCellCFColorScale RED_TO_BLUE = 2 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridCellCFColorScale BLUE_TO_RED = 3 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridCellCFColorScale ORANGE_TO_YELLOW = 4 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridCellCFColorScale YELLOW_TO_ORANGE = 5 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridCellCFColorScale YELLOW_TO_GREEN = 6 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.GridCellCFColorScale GREEN_TO_YELLOW = 7 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.RowsHierarchy: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.DataGridView.Hierarchy
+    Void .ctor(VIBlend.WinForms.DataGridView.vDataGridView): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean CompactStyleRenderingEnabled 'get set' : 
+    Int32 CompactStyleRenderingItemsIndent 'get set' : 
+    Int32 Height 'get ' : 
+    Int32 Width 'get ' : 
+  Methods:
+    get_CompactStyleRenderingEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_CompactStyleRenderingEnabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_CompactStyleRenderingItemsIndent(): PrivateScope, Public, HideBySig, SpecialName
+    set_CompactStyleRenderingItemsIndent(Int32): PrivateScope, Public, HideBySig, SpecialName
+    SetColumnWidth(Int32, Int32): PrivateScope, Public, Virtual, HideBySig
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    AutoResize(): PrivateScope, Public, Virtual, HideBySig
+    AutoResize(AutoResizeMode): PrivateScope, Public, Virtual, HideBySig
+Class VIBlend.WinForms.DataGridView.TrackBarEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+  Methods:
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnCloseEditor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.vDataGridViewGroupsHeader: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Control
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    VIBlend.WinForms.DataGridView.HeaderGroupsAlignment HeaderItemsAlignment 'get set' : 
+    System.String PromptText 'get set' : 
+    System.Drawing.Color PromptTextColor 'get set' : 
+    Boolean AllowDragDrop 'get set' : 
+    Boolean ShowConnectingLines 'get set' : 
+    System.Drawing.Color ConnectingLinesColor 'get set' : 
+    Int32 HeaderItemIndent 'get set' : 
+    System.Windows.Forms.Padding HeaderItemsPadding 'get set' : 
+    VIBlend.WinForms.DataGridView.vDataGridView DataGridView 'get set' : 
+    Boolean IsThemeSynchronized 'get set' : 
+    VIBlend.Utilities.GridTheme Theme 'get set' : 
+    VIBlend.Utilities.VIBLEND_THEME VIBlendTheme 'get set' : 
+    System.Drawing.Point InitialItemsOffset 'get set' : 
+  Events:
+    System.EventHandler`1[VIBlend.WinForms.DataGridView.GroupHeaderDragEventArgs] DragStarted: 
+    System.EventHandler`1[VIBlend.WinForms.DataGridView.GroupHeaderDragCancelEventArgs] DragStarting: 
+    System.EventHandler`1[VIBlend.WinForms.DataGridView.GroupHeaderDragEventArgs] DragEnded: 
+    System.EventHandler`1[VIBlend.WinForms.DataGridView.GroupHeaderDragCancelEventArgs] DragEnding: 
+  Methods:
+    get_HeaderItemsAlignment(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeaderItemsAlignment(HeaderGroupsAlignment): PrivateScope, Public, HideBySig, SpecialName
+    add_DragStarted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DragStarted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DragStarting(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DragStarting(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DragEnded(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DragEnded(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DragEnding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DragEnding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    get_PromptText(): PrivateScope, Public, HideBySig, SpecialName
+    set_PromptText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PromptTextColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_PromptTextColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowDragDrop(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowDragDrop(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowConnectingLines(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowConnectingLines(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectingLinesColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectingLinesColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_HeaderItemIndent(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeaderItemIndent(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_HeaderItemsPadding(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeaderItemsPadding(Padding): PrivateScope, Public, HideBySig, SpecialName
+    get_DataGridView(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataGridView(vDataGridView): PrivateScope, Public, HideBySig, SpecialName
+    WireEvents(): PrivateScope, Public, HideBySig
+    UnwireEvents(): PrivateScope, Public, HideBySig
+    GetColumnHeaders(): PrivateScope, Public, HideBySig
+    get_IsThemeSynchronized(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsThemeSynchronized(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    RenderGroups(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Theme(): PrivateScope, Public, HideBySig, SpecialName
+    set_Theme(GridTheme): PrivateScope, Public, HideBySig, SpecialName
+    get_VIBlendTheme(): PrivateScope, Public, HideBySig, SpecialName
+    set_VIBlendTheme(VIBLEND_THEME): PrivateScope, Public, HideBySig, SpecialName
+    get_InitialItemsOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_InitialItemsOffset(Point): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.ProgressBarEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    Int32 Maximum 'get set' : 
+    Int32 Minimum 'get set' : 
+    VIBlend.WinForms.DataGridView.GridCell EditCell 'get ' : 
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+    System.Nullable`1[VIBlend.Utilities.VIBLEND_THEME] VIBlendTheme 'get set' : 
+  Methods:
+    get_Maximum(): PrivateScope, Public, HideBySig, SpecialName
+    set_Maximum(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Minimum(): PrivateScope, Public, HideBySig, SpecialName
+    set_Minimum(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_EditCell(): PrivateScope, Public, HideBySig, SpecialName
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_VIBlendTheme(): PrivateScope, Public, HideBySig, SpecialName
+    set_VIBlendTheme(Nullable`1): PrivateScope, Public, HideBySig, SpecialName
+    OnCloseEditor(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.NumericUpDownEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.Controls.vNumericUpDown
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+  Methods:
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnCloseEditor(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.CurrencyEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.Controls.vCurrencyEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.GridCell EditCell 'get ' : 
+    Boolean HandleEnterKey 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+  Methods:
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditCell(): PrivateScope, Public, HideBySig, SpecialName
+    get_HandleEnterKey(): PrivateScope, Public, HideBySig, SpecialName
+    set_HandleEnterKey(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnCloseEditor(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class VIBlend.WinForms.DataGridView.CellValueChangingEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.DataGridView.CellCancelEventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.GridCell, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Object NewValue 'get set' : 
+  Methods:
+    get_NewValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_NewValue(Object): PrivateScope, Public, HideBySig, SpecialName
+Class VIBlend.WinForms.DataGridView.HierarchyItemDragCancelEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.DataGridView.HierarchyItemDragEventArgs
+    Void .ctor(VIBlend.WinForms.DataGridView.HierarchyItem, VIBlend.WinForms.DataGridView.HierarchyItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Cancel 'get set' : 
+  Methods:
+    get_Cancel(): PrivateScope, Public, HideBySig, SpecialName
+    set_Cancel(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Struct VIBlend.WinForms.DataGridView.FilterDisplayMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    VIBlend.WinForms.DataGridView.FilterDisplayMode Default = 0 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.FilterDisplayMode Basic = 1 : Public, Static, Literal, HasDefault
+    VIBlend.WinForms.DataGridView.FilterDisplayMode Custom = 2 : Public, Static, Literal, HasDefault
+Class VIBlend.WinForms.DataGridView.TextBoxEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :VIBlend.WinForms.Controls.vTextBox
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    VIBlend.WinForms.DataGridView.IEditor
+  Properties:
+    VIBlend.WinForms.DataGridView.CellEditorType EditorType 'get ' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags ActivationFlags 'get set' : 
+    VIBlend.WinForms.DataGridView.EditorActivationFlags DeActivationFlags 'get set' : 
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Object EditorValue 'get set' : 
+  Methods:
+    get_EditorType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DeActivationFlags(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DeActivationFlags(EditorActivationFlags): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnGridKeyDown(KeyEventArgs, GridCell, Boolean&(Out), Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DrawEditorControl(Graphics, GridCell, Boolean&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LayoutEditor(GridCell): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Control(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditorValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EditorValue(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OnOpenEditor(GridCell): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnCloseEditor(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask

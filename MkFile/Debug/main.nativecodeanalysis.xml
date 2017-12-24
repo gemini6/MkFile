@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DEFECTS><DEFECT><SFA><FILEPATH>c:\users\ares119\desktop\code\projects\c++\mkfile\mkfile\</FILEPATH><FILENAME>gui.h</FILENAME><LINE>17</LINE><COLUMN>18</COLUMN></SFA><DEFECTCODE>28204</DEFECTCODE><DESCRIPTION>'&lt;Dispose&gt;' : Only one of this override and the one at &lt;no file&gt;(0) are annotated for _Param_(1): both or neither must be annotated.</DESCRIPTION><FUNCTION></FUNCTION><DECORATED></DECORATED><FUNCLINE>0</FUNCLINE><PATH/></DEFECT></DEFECTS>
